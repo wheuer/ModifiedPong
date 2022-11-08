@@ -1,0 +1,37 @@
+Major Parts:
+	Button cell battery holder https://www.lcsc.com/product-detail/Battery-Connectors_MYOUNG-MY-2032-08_C964831.html
+	Li-on charge controller (MCP73831) https://www.lcsc.com/product-detail/Battery-Management-ICs_Microchip-Tech-MCP73831T-2ACI-OT_C424093.html
+	3.3V Linear Regulator (LP3990MF-3.3/NOPB) https://www.lcsc.com/product-detail/Linear-Voltage-Regulators-LDO_Texas-Instruments-LP3990MF-3-3-NOPB_C133817.html
+	ATMEGA328PU https://www.lcsc.com/product-detail/Microcontroller-Units-MCUs-MPUs-SOCs_Microchip-Tech-ATMEGA328P-AU_C14877.html
+	16 MHz crystal https://www.lcsc.com/product-detail/Crystals_ECEC-ZheJiang-E-ast-Crystal-Elec-B16000J114_C279575.html
+	Micro USB Charging Port https://www.lcsc.com/product-detail/span-style-background-color-ff0-USB-span-Connectors_SHOU-HAN-MicroXNJ_C404969.html
+	Power Switch https://www.lcsc.com/product-detail/Slide-Switches_Korean-Hroparts-Elec-K3-1290S-E1_C145854.html
+	Input buttons https://www.lcsc.com/product-detail/Tactile-Switches_BOOMELE-Boom-Precision-Elec-C174049_C174049.html
+
+
+Accompaying Parts:
+	Li-on charge controller:
+		x4.7uF
+		x10uF
+		x28Kohm
+		xOrange LED 
+		xGreen LED
+		x2x 470ohm
+	
+	3.3V Linear Regulator:
+		x2x 1uF
+
+	ATMEGA328PU:
+		x2x 0.1uF bypass (Vcc and AVcc)
+		x10kohm reset pull up
+		
+	16 MHz crystal:
+		x2x 20pF 
+	
+	Battery Voltage Sensing:
+		(should turn off/say to charge at ~3.4V)
+		x2x 10k -> measure for a voltage below ~1.7V
+
+Make sure to add OLED holes and programming pins (
+		
+	
