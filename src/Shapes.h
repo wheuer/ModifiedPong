@@ -19,7 +19,6 @@ class Rectangle {
     void shift(int x, int y);
     bool check_collision_rectangle(int x, int y, int width, int height);
     bool check_collision_circle(int x, int y, int radius);
-//    bool check_collision(int x, int y, int width, int height);
     void set_position(int x, int y);
     int get_x();
     int get_y();

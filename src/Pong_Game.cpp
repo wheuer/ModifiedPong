@@ -15,6 +15,7 @@ void Pong_Game::start(){
   this->player2.set_position(SCREEN_WIDTH-4, 32-14);
   this->game_ball.set_position(62, random(0,30));
   
+  // Randomize the velocity for the game ball in the beginning
   if (random(0, 2)){
     if (random(0, 2)){
       this->game_ball.set_velocity(-1, 1);
@@ -30,6 +31,7 @@ void Pong_Game::start(){
   }  
 }
 
+// Player can only move up and down
 // Direction == 1 -> up
 // Direction == 0 -> down
 void Pong_Game::move_player1(int direction){

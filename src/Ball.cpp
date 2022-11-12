@@ -38,7 +38,9 @@ void Ball::speed_up(){
     }
 }
 
+// Move the ball by x in the x and by y in the y directions
 void Ball::shift(int x, int y){
+    // Check if ball has hit the screen bounds in the x dimension, if so turn around
     if (((this->x + x + this->radius) >= SCREEN_WIDTH)){
         this->set_position(SCREEN_WIDTH - this->radius, this->y);
         this->set_velocity(this->vx*-1, this->vy);
@@ -49,6 +51,7 @@ void Ball::shift(int x, int y){
         this->x += x;
     }
     
+    // Check if ball has hit the screen bounds in the y dimension, if so turn around
     if (((this->y + y + this->radius) >= SCREEN_HEIGHT)){
         this->set_position(this->x, SCREEN_HEIGHT - this->radius);
         this->set_velocity(this->vx, this->vy*-1);
@@ -68,6 +71,7 @@ void Ball::turn_around_y(){
   this->set_velocity(this->vx, this->vy*-1);
 }
 
+// Shift the ball based on its current velocity
 void Ball::update_position(){
     this->shift(vx, vy);
 }
